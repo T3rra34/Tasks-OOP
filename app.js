@@ -4,11 +4,13 @@ ls = new LS();
 const taskList = document.querySelector('ul');
 const form = document.querySelector('form');
 const taskInput = document.querySelector('#task');
+const delAllBtn = document.querySelector('#clear-tasks');
 const clearBtn = document.querySelector('#clear-tasks');
 document.addEventListener('DOMContentLoaded', getTasks);
 
 
 taskList.addEventListener('click', deleteTask);
+delAllBtn.addEventListener('click', deleteTasks);
 
 form.addEventListener('submit', addTask);
 
