@@ -30,5 +30,4 @@ class LS {
 	deleteTasks(){
 		localStorage.clear();
 	}
-
 }
